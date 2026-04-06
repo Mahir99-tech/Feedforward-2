@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Bank Login - FeedForward Nova Scotia</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header class="login-header foodbank-header">
+    <img src="logo.png" alt="FeedForward Nova Scotia logo" class="login-logo">
+    <div>
+      <h1>Food Bank Portal</h1>
+      <p>Sign in or create an account to review available donations.</p>
+    </div>
+  </header>
+
+  <main class="login-page">
+    <section class="form-card">
+      <h2>Login</h2>
+      <p class="form-note">Already have an account? Log in to start donating.</p>
+
+      <form class="login-form" id="foodbank-login-form">
+        <label for="foodbank-email">Email</label>
+        <input type="email" id="foodbank-email" name="email" placeholder="Enter your email" required>
+
+        <label for="foodbank-password">Password</label>
+        <input type="password" id="foodbank-password" name="password" placeholder="Enter your password" required>
+
+        <button type="submit" class="button foodbank-button">Login</button>
+        <button type="button" class="button donor-button"
+            onclick="alert('Our organization will contact you to reset your password.')">
+              Forgot Password?
+              </button>
+      </form>
+
+      <p class="back-link"><a href="index.html">Back to Home</a></p>
+    </section>
+
+    <section class="form-card">
+      <h2>Create Food Bank Account</h2>
+      <p class="form-note">New here? Create an account to join the community.</p>
+      <form id="foodbank-signup-form">
+        <label for="foodbank-name">Organization Name</label>
+        <input type="text" id="foodbank-name" name="foodbank-name" placeholder="Community Food Bank" required>
+
+        <label for="foodbank-contact">Primary Contact</label>
+        <input type="text" id="foodbank-contact" name="foodbank-contact" placeholder="Coordinator name" required>
+
+        <label for="foodbank-signup-email">Email</label>
+        <input type="email" id="foodbank-signup-email" name="signup-email" placeholder="foodbank@example.com" required>
+
+        <label for="foodbank-phone">Phone</label>
+        <input type="tel" id="foodbank-phone" name="phone" placeholder="902-555-5678" required>
+
+        <label for="foodbank-address">Address</label>
+        <input type="text" id="foodbank-address" name="address" placeholder="45 Community Rd, Halifax" required>
+
+        <label for="foodbank-new-password">Password</label>
+        <input type="password" id="foodbank-new-password" name="new-password" minlength="6" required>
+
+        <label for="foodbank-confirm-password">Confirm Password</label>
+        <input type="password" id="foodbank-confirm-password" name="confirm-password" minlength="6" required>
+
+        <button type="submit" class="button foodbank-button">Create Account</button>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="auth.js"></script>
+</body>
+</html>

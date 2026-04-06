@@ -1,0 +1,128 @@
+body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+    background: #f6f7f5;
+    color: #16333a;
+}
+
+header {
+    background: #08a94f;
+    padding: 20px;
+    text-align: center;
+}
+
+.top-bar {
+    position: relative;
+    background: #08a94f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.top-bar h1 a,
+header h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.header-subtitle {
+    color: white;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.logout-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    color: #08a94f;
+    padding: 10px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background: #f3f3f3;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+h2 {
+    color: #103b45;
+    border-left: 5px solid #f0bf3d;
+    padding-left: 10px;
+}
+
+form {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #cfe4d7;
+    box-sizing: border-box;
+}
+
+button {
+    background: #f0bf3d;
+    color: #103b45;
+    border: none;
+    padding: 12px;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e0aa30;
+}
+
+.listing {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #cfe4d7;
+    transition: 0.2s;
+}
+
+.listing:hover {
+    background: #fff9e6;
+}
+
+.deleted {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    opacity: 0.7;
+}
+
+.deleted h3 {
+    color: #888;
+}
+
+.delete-btn:disabled {
+    background: #ccc;
+    color: #555;
+    cursor: not-allowed;
+}

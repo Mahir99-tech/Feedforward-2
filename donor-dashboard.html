@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FeedForward - Donor Dashboard</title>
+  <link rel="stylesheet" href="restaurant.css">
+</head>
+<body>
+
+<header class="top-bar">
+  <div>
+    <h1><a href="index.html">Donor Dashboard</a></h1>
+    <p class="header-subtitle">Post and manage your surplus food donations</p>
+  </div>
+
+  <a href="index.html">
+  <button class="logout-btn">Logout</button>
+  </a>
+</header>
+
+<div class="container">
+
+  <h2>Post Surplus Food</h2>
+
+  <form onsubmit="addDonation(); return false;">
+    <label for="foodName">Food Name</label>
+    <input type="text" id="foodName" placeholder="e.g. Bread Loaves">
+
+    <label for="foodType">Food Type</label>
+    <select id="foodType">
+      <option>Room Temperature</option>
+      <option>Frozen/Iced</option>
+      <option>Raw/Fresh</option>
+      <option>Perishable</option>
+    </select>
+
+    <label for="quantity">Quantity (KGs) <small>(e.g., 2.5)</small></label>
+    <input type="number" id="quantity" step="0.01">
+
+    <label for="expiry">Best Before <small>(YYYY-MM-DD)</small></label>
+    <input type="date" id="expiry">
+
+    <label for="donationLocation">Donation Location</label>
+    <input type="text" id="donationLocation" placeholder="e.g. Downtown Cafe">
+
+    <label for="pickupDate">Pickup Date</label>
+    <input type="date" id="pickupDate">
+
+    <label for="pickupTime">Pickup Time</label>
+    <input type="time" id="pickupTime">
+
+    <button type="submit">Submit Donation</button>
+  </form>
+
+  <h2>My Donations</h2>
+  <div id="donationList"></div>
+
+</div>
+
+<script type="module" src="restaurant.js"></script>
+</body>
+</html>

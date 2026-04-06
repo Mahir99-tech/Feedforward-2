@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FeedForward - Food Bank Dashboard</title>
+  <link rel="stylesheet" href="foodbank.css">
+</head>
+<body>
+
+<header class="top-bar">
+  <div>
+    <h1><a href="index.html">Food Bank Dashboard</a></h1>
+    <p class="header-subtitle">Browse available food donations and filter by category</p>
+  </div>
+
+  <a href="index.html">
+  <button class="logout-btn">Logout</button>
+  </a>
+</header>
+
+<div class="container">
+
+  <p class="info-text">Available donations are shown below for food banks to review and claim.</p>
+
+  <div class="filter">
+    <label for="filterType">Filter by Type</label>
+    <select id="filterType" onchange="filterDonations()">
+      <option value="all">All</option>
+      <option>Room Temperature</option>
+      <option>Frozen/Iced</option>
+      <option>Raw/Fresh</option>
+      <option>Perishable</option>
+    </select>
+  </div>
+
+  <div id="donations"></div>
+
+</div>
+
+<script type="module" src="foodbank.js"></script>
+</body>
+</html>
